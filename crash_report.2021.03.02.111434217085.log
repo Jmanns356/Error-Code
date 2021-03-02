@@ -1,0 +1,524 @@
+03/02/2021 11:14:02 MainProcess     _training_0                    config          __init__                       DEBUG    Initialized: Config
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'centering')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'str'>, value: face)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'coverage')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'float'>, value: 68.75)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'icnr_init')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'bool'>, value: False)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'conv_aware_init')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'bool'>, value: False)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'optimizer')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'str'>, value: adam)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'learning_rate')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'float'>, value: 5e-05)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'reflect_padding')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'bool'>, value: False)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'allow_growth')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'bool'>, value: False)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'mixed_precision')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'bool'>, value: False)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global', option: 'convert_batchsize')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 16)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'loss_function')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'str'>, value: ssim)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'mask_loss_function')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'str'>, value: mse)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'l2_reg_term')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 100)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'eye_multiplier')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 3)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'mouth_multiplier')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 2)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'penalized_mask_loss')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'bool'>, value: False)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'mask_type')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'str'>, value: extended)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'mask_blur_kernel')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 3)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'mask_threshold')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 4)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'learn_mask')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'bool'>, value: False)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'preview_images')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 14)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'zoom_amount')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 5)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'rotation_range')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 10)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'shift_range')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 5)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'flip_chance')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 50)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'color_lightness')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 30)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'color_ab')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 8)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'color_clahe_chance')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 50)
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Getting config item: (section: 'trainer.original', option: 'color_clahe_max_size')
+03/02/2021 11:14:02 MainProcess     _training_0                    config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 4)
+03/02/2021 11:14:02 MainProcess     _training_0                    _base           add_session_batchsize          DEBUG    Adding session batch size: 16
+03/02/2021 11:14:02 MainProcess     _training_0                    _base           __init__                       DEBUG    Initializing _TrainingAlignments: (model: <plugins.train.model.original.Model object at 0x0000023E28810D30>, image counts: {'a': 8582, 'b': 8686})
+03/02/2021 11:14:02 MainProcess     _training_0                    _base           _load_detected_faces           DEBUG    side: a, file count: 8582
+03/02/2021 11:14:02 MainProcess     _training_0                    image           read_image_meta_batch          DEBUG    Submitting 8582 items to executor
+03/02/2021 11:14:02 MainProcess     _training_0                    image           read_image_meta_batch          DEBUG    Succesfully submitted 8582 items to executor
+03/02/2021 11:14:17 MainProcess     _training_0                    _base           _load_detected_faces           DEBUG    side: b, file count: 8686
+03/02/2021 11:14:17 MainProcess     _training_0                    image           read_image_meta_batch          DEBUG    Submitting 8686 items to executor
+03/02/2021 11:14:17 MainProcess     _training_0                    image           read_image_meta_batch          DEBUG    Succesfully submitted 8686 items to executor
+03/02/2021 11:14:33 MainProcess     _training_0                    _base           _update_legacy_facesets        INFO     Legacy faces discovered for side 'B'. Updating 3 images...
+03/02/2021 11:14:33 MainProcess     _training_0                    alignments      __init__                       DEBUG    Initializing Alignments: (folder: 'C:\Users\manns\Desktop\FaceSwap1\Final_Wan', filename: 'NewestFinalWan_alignments.fsa')
+03/02/2021 11:14:33 MainProcess     _training_0                    serializer      get_serializer                 DEBUG    <lib.serializer._PickleSerializer object at 0x0000023E6795B970>
+03/02/2021 11:14:33 MainProcess     _training_0                    serializer      get_serializer                 DEBUG    <lib.serializer._CompressedSerializer object at 0x0000023E6795BD30>
+03/02/2021 11:14:33 MainProcess     _training_0                    alignments      _get_location                  DEBUG    Getting location: (folder: 'C:\Users\manns\Desktop\FaceSwap1\Final_Wan', filename: 'NewestFinalWan_alignments.fsa')
+03/02/2021 11:14:33 MainProcess     _training_0                    alignments      _get_location                  DEBUG    Valid Alignments filename provided: 'NewestFinalWan_alignments.fsa'
+03/02/2021 11:14:33 MainProcess     _training_0                    alignments      _get_location                  VERBOSE  Alignments filepath: 'C:\Users\manns\Desktop\FaceSwap1\Final_Wan\NewestFinalWan_alignments.fsa'
+03/02/2021 11:14:33 MainProcess     _training_0                    alignments      _load                          DEBUG    Loading alignments
+03/02/2021 11:14:33 MainProcess     _training_0                    alignments      _load                          INFO     Reading alignments from: 'C:\Users\manns\Desktop\FaceSwap1\Final_Wan\NewestFinalWan_alignments.fsa'
+03/02/2021 11:14:33 MainProcess     _training_0                    serializer      load                           DEBUG    filename: C:\Users\manns\Desktop\FaceSwap1\Final_Wan\NewestFinalWan_alignments.fsa
+03/02/2021 11:14:33 MainProcess     _training_0                    serializer      load                           DEBUG    stored data type: <class 'bytes'>
+03/02/2021 11:14:33 MainProcess     _training_0                    serializer      unmarshal                      DEBUG    data type: <class 'bytes'>
+03/02/2021 11:14:34 MainProcess     _training_0                    serializer      unmarshal                      DEBUG    returned data type: <class 'dict'>
+03/02/2021 11:14:34 MainProcess     _training_0                    serializer      load                           DEBUG    data type: <class 'dict'>
+03/02/2021 11:14:34 MainProcess     _training_0                    alignments      _load                          DEBUG    Loaded alignments
+03/02/2021 11:14:34 MainProcess     _training_0                    alignments      _has_legacy_structure          DEBUG    legacy structure: False
+03/02/2021 11:14:34 MainProcess     _training_0                    alignments      _has_legacy_landmarksxy        DEBUG    checking legacy landmarksXY
+03/02/2021 11:14:34 MainProcess     _training_0                    alignments      _has_legacy_landmarksxy        DEBUG    legacy landmarksXY: False
+03/02/2021 11:14:34 MainProcess     _training_0                    alignments      _has_legacy_landmarks_list     DEBUG    checking legacy landmarks as list
+03/02/2021 11:14:34 MainProcess     _training_0                    alignments      __init__                       DEBUG    Initializing Thumbnails: (alignments: <lib.align.alignments.Alignments object at 0x0000023E6795B910>)
+03/02/2021 11:14:34 MainProcess     _training_0                    alignments      __init__                       DEBUG    Initialized Thumbnails
+03/02/2021 11:14:34 MainProcess     _training_0                    alignments      __init__                       DEBUG    Initialized Alignments
+03/02/2021 11:14:34 MainProcess     ThreadPoolExecutor-2_0         alignments      hashes_to_alignment            DEBUG    Generating hashes to alignment
+03/02/2021 11:14:34 MainProcess     ThreadPoolExecutor-2_2         alignments      hashes_to_alignment            DEBUG    Generating hashes to alignment
+03/02/2021 11:14:34 MainProcess     ThreadPoolExecutor-2_0         alignments      hashes_to_frame                DEBUG    Generating hashes to frame
+03/02/2021 11:14:34 MainProcess     _training_0                    multithreading  run                            DEBUG    Error in thread (_training_0): 'fcb7591ee808d652ace8167abde5750726d5e00a'
+03/02/2021 11:14:34 MainProcess     MainThread                     train           _monitor                       DEBUG    Thread error detected
+03/02/2021 11:14:34 MainProcess     MainThread                     train           _monitor                       DEBUG    Closed Monitor
+03/02/2021 11:14:34 MainProcess     MainThread                     train           _end_thread                    DEBUG    Ending Training thread
+03/02/2021 11:14:34 MainProcess     MainThread                     train           _end_thread                    CRITICAL Error caught! Exiting...
+03/02/2021 11:14:34 MainProcess     MainThread                     multithreading  join                           DEBUG    Joining Threads: '_training'
+03/02/2021 11:14:34 MainProcess     MainThread                     multithreading  join                           DEBUG    Joining Thread: '_training_0'
+03/02/2021 11:14:34 MainProcess     MainThread                     multithreading  join                           ERROR    Caught exception in thread: '_training_0'
+Traceback (most recent call last):
+  File "C:\Users\manns\Desktop\faceswap\lib\cli\launcher.py", line 182, in execute_script
+    process.process()
+  File "C:\Users\manns\Desktop\faceswap\scripts\train.py", line 170, in process
+    self._end_thread(thread, err)
+  File "C:\Users\manns\Desktop\faceswap\scripts\train.py", line 210, in _end_thread
+    thread.join()
+  File "C:\Users\manns\Desktop\faceswap\lib\multithreading.py", line 121, in join
+    raise thread.err[1].with_traceback(thread.err[2])
+  File "C:\Users\manns\Desktop\faceswap\lib\multithreading.py", line 37, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\manns\Desktop\faceswap\scripts\train.py", line 232, in _training
+    raise err
+  File "C:\Users\manns\Desktop\faceswap\scripts\train.py", line 221, in _training
+    trainer = self._load_trainer(model)
+  File "C:\Users\manns\Desktop\faceswap\scripts\train.py", line 267, in _load_trainer
+    trainer = trainer(model,
+  File "C:\Users\manns\Desktop\faceswap\plugins\train\trainer\original.py", line 10, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\manns\Desktop\faceswap\plugins\train\trainer\_base.py", line 83, in __init__
+    alignment_data = self._get_alignments_data()
+  File "C:\Users\manns\Desktop\faceswap\plugins\train\trainer\_base.py", line 143, in _get_alignments_data
+    alignments = _TrainingAlignments(self._model, self._images)
+  File "C:\Users\manns\Desktop\faceswap\plugins\train\trainer\_base.py", line 1091, in __init__
+    self._update_legacy_facesets(image_list)
+  File "C:\Users\manns\Desktop\faceswap\plugins\train\trainer\_base.py", line 1227, in _update_legacy_facesets
+    result = future.result()
+  File "C:\Users\manns\MiniConda3\envs\faceswap\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Users\manns\MiniConda3\envs\faceswap\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\manns\MiniConda3\envs\faceswap\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\manns\Desktop\faceswap\lib\align\detected_face.py", line 905, in update_legacy_png_header
+    src_fname, face_idx = list(alignments.hashes_to_frame[in_hash].items())[hashes_seen[in_hash]]
+KeyError: 'fcb7591ee808d652ace8167abde5750726d5e00a'
+
+============ System Information ============
+encoding:            cp1252
+git_branch:          master
+git_commits:         514f3d6 lib.gui - Restore settings window on click when hidden
+gpu_cuda:            No global version found. Check Conda packages for Conda Cuda
+gpu_cudnn:           No global version found. Check Conda packages for Conda cuDNN
+gpu_devices:         GPU_0: Advanced Micro Devices, Inc. - Ellesmere (experimental), GPU_1: Advanced Micro Devices, Inc. - Ellesmere (supported)
+gpu_devices_active:  GPU_0, GPU_1
+gpu_driver:          ['3188.4', '3188.4']
+gpu_vram:            GPU_0: 8192MB, GPU_1: 8192MB
+os_machine:          AMD64
+os_platform:         Windows-10-10.0.18362-SP0
+os_release:          10
+py_command:          C:\Users\manns\Desktop\faceswap\faceswap.py train -A C:/Users/manns/Desktop/FaceSwap1/Proj3/Proj3 -ala C:/Users/manns/Desktop/FaceSwap1/Proj3/Proj3_alignments.fsa -B C:/Users/manns/Desktop/FaceSwap1/Final_Wan/Final_Wan_SRC -alb C:/Users/manns/Desktop/FaceSwap1/Final_Wan/NewestFinalWan_alignments.fsa -m C:/Users/manns/Desktop/FaceSwap1/Proj3/Proj3_Model -t original -bs 16 -it 1000000 -s 250 -ss 25000 -ps 100 -L INFO -gui
+py_conda_version:    conda 4.9.2
+py_implementation:   CPython
+py_version:          3.8.8
+py_virtual_env:      True
+sys_cores:           16
+sys_processor:       AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+sys_ram:             Total: 16328MB, Available: 8243MB, Used: 8085MB, Free: 8243MB
+
+=============== Pip Packages ===============
+absl-py==0.11.0
+astunparse==1.6.3
+cachetools==4.2.1
+certifi==2020.12.5
+cffi==1.14.5
+chardet==4.0.0
+cycler==0.10.0
+enum34==1.1.10
+fastcluster==1.1.26
+ffmpy==0.2.3
+gast==0.3.3
+google-auth==1.27.0
+google-auth-oauthlib==0.4.2
+google-pasta==0.2.0
+grpcio==1.36.0
+h5py==2.10.0
+idna==2.10
+imageio @ file:///tmp/build/80754af9/imageio_1594161405741/work
+imageio-ffmpeg @ file:///home/conda/feedstock_root/build_artifacts/imageio-ffmpeg_1609799311556/work
+joblib @ file:///tmp/build/80754af9/joblib_1613502643832/work
+Keras==2.2.4
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+kiwisolver @ file:///C:/ci/kiwisolver_1612282606037/work
+Markdown==3.3.4
+matplotlib @ file:///C:/ci/matplotlib-base_1592837548929/work
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+numpy==1.18.5
+nvidia-ml-py3 @ git+https://github.com/deepfakes/nvidia-ml-py3.git@6fc29ac84b32bad877f078cb4a777c1548a00bf6
+oauthlib==3.1.0
+olefile==0.46
+opencv-python==4.5.1.48
+opt-einsum==3.3.0
+pathlib==1.0.1
+Pillow @ file:///C:/ci/pillow_1609786840597/work
+plaidml==0.7.0
+plaidml-keras==0.7.0
+protobuf==3.15.3
+psutil @ file:///C:/ci/psutil_1612298324802/work
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser==2.20
+pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
+python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
+pywin32==227
+PyYAML==5.4.1
+requests==2.25.1
+requests-oauthlib==1.3.0
+rsa==4.7.2
+scikit-learn @ file:///C:/ci/scikit-learn_1614446896245/work
+scipy @ file:///C:/ci/scipy_1614023125644/work
+sip==4.19.13
+six @ file:///C:/ci/six_1605187374963/work
+tensorboard==2.2.2
+tensorboard-plugin-wit==1.8.0
+tensorflow==2.2.2
+tensorflow-estimator==2.2.0
+termcolor==1.1.0
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+tornado @ file:///C:/ci/tornado_1606942392901/work
+tqdm @ file:///tmp/build/80754af9/tqdm_1611857934208/work
+urllib3==1.26.3
+Werkzeug==1.0.1
+wincertstore==0.2
+wrapt==1.12.1
+
+============== Conda Packages ==============
+# packages in environment at C:\Users\manns\MiniConda3\envs\faceswap:
+#
+# Name                    Version                   Build  Channel
+absl-py                   0.11.0                   pypi_0    pypi
+astunparse                1.6.3                    pypi_0    pypi
+blas                      1.0                         mkl  
+ca-certificates           2021.1.19            haa95532_0  
+cachetools                4.2.1                    pypi_0    pypi
+certifi                   2020.12.5        py38haa95532_0  
+cffi                      1.14.5                   pypi_0    pypi
+chardet                   4.0.0                    pypi_0    pypi
+cycler                    0.10.0                   py38_0  
+enum34                    1.1.10                   pypi_0    pypi
+fastcluster               1.1.26           py38h251f6bf_2    conda-forge
+ffmpeg                    4.3.1                ha925a31_0    conda-forge
+ffmpy                     0.2.3                    pypi_0    pypi
+freetype                  2.10.4               hd328e21_0  
+gast                      0.3.3                    pypi_0    pypi
+git                       2.23.0               h6bb4b03_0  
+google-auth               1.27.0                   pypi_0    pypi
+google-auth-oauthlib      0.4.2                    pypi_0    pypi
+google-pasta              0.2.0                    pypi_0    pypi
+grpcio                    1.36.0                   pypi_0    pypi
+h5py                      2.10.0                   pypi_0    pypi
+icc_rt                    2019.0.0             h0cc432a_1  
+icu                       58.2                 ha925a31_3  
+idna                      2.10                     pypi_0    pypi
+imageio                   2.9.0                      py_0  
+imageio-ffmpeg            0.4.3              pyhd8ed1ab_0    conda-forge
+intel-openmp              2020.2                      254  
+joblib                    1.0.1              pyhd3eb1b0_0  
+jpeg                      9b                   hb83a4c4_2  
+keras                     2.2.4                    pypi_0    pypi
+keras-applications        1.0.8                    pypi_0    pypi
+keras-preprocessing       1.1.2                    pypi_0    pypi
+kiwisolver                1.3.1            py38hd77b12b_0  
+libpng                    1.6.37               h2a8f88b_0  
+libtiff                   4.1.0                h56a325e_1  
+lz4-c                     1.9.3                h2bbff1b_0  
+markdown                  3.3.4                    pypi_0    pypi
+matplotlib                3.2.2                         0  
+matplotlib-base           3.2.2            py38h64f37c6_0  
+mkl                       2020.2                      256  
+mkl-service               2.3.0            py38h196d8e1_0  
+mkl_fft                   1.3.0            py38h46781fe_0  
+mkl_random                1.1.1            py38h47e9c7a_0  
+numpy                     1.18.5                   pypi_0    pypi
+nvidia-ml-py3             7.352.1                  pypi_0    pypi
+oauthlib                  3.1.0                    pypi_0    pypi
+olefile                   0.46                       py_0  
+opencv-python             4.5.1.48                 pypi_0    pypi
+openssl                   1.1.1j               h2bbff1b_0  
+opt-einsum                3.3.0                    pypi_0    pypi
+pathlib                   1.0.1                      py_1  
+pillow                    8.1.0            py38h4fa10fc_0  
+pip                       21.0.1           py38haa95532_0  
+plaidml                   0.7.0                    pypi_0    pypi
+plaidml-keras             0.7.0                    pypi_0    pypi
+protobuf                  3.15.3                   pypi_0    pypi
+psutil                    5.8.0            py38h2bbff1b_1  
+pyasn1                    0.4.8                    pypi_0    pypi
+pyasn1-modules            0.2.8                    pypi_0    pypi
+pycparser                 2.20                     pypi_0    pypi
+pyparsing                 2.4.7              pyhd3eb1b0_0  
+pyqt                      5.9.2            py38ha925a31_4  
+python                    3.8.8                hdbf39b2_4  
+python-dateutil           2.8.1              pyhd3eb1b0_0  
+python_abi                3.8                      1_cp38    conda-forge
+pywin32                   227              py38he774522_1  
+pyyaml                    5.4.1                    pypi_0    pypi
+qt                        5.9.7            vc14h73c81de_0  
+requests                  2.25.1                   pypi_0    pypi
+requests-oauthlib         1.3.0                    pypi_0    pypi
+rsa                       4.7.2                    pypi_0    pypi
+scikit-learn              0.24.1           py38hf11a4ad_0  
+scipy                     1.6.1            py38h14eb087_0  
+setuptools                52.0.0           py38haa95532_0  
+sip                       4.19.13          py38ha925a31_0  
+six                       1.15.0           py38haa95532_0  
+sqlite                    3.33.0               h2a8f88b_0  
+tensorboard               2.2.2                    pypi_0    pypi
+tensorboard-plugin-wit    1.8.0                    pypi_0    pypi
+tensorflow                2.2.2                    pypi_0    pypi
+tensorflow-estimator      2.2.0                    pypi_0    pypi
+termcolor                 1.1.0                    pypi_0    pypi
+threadpoolctl             2.1.0              pyh5ca1d4c_0  
+tk                        8.6.10               he774522_0  
+tornado                   6.1              py38h2bbff1b_0  
+tqdm                      4.56.0             pyhd3eb1b0_0  
+urllib3                   1.26.3                   pypi_0    pypi
+vc                        14.2                 h21ff451_1  
+vs2015_runtime            14.27.29016          h5e58377_2  
+werkzeug                  1.0.1                    pypi_0    pypi
+wheel                     0.36.2             pyhd3eb1b0_0  
+wincertstore              0.2                      py38_0  
+wrapt                     1.12.1                   pypi_0    pypi
+xz                        5.2.5                h62dcd97_0  
+zlib                      1.2.11               h62dcd97_4  
+zstd                      1.4.5                h04227a9_0  
+
+================= Configs ==================
+--------- .faceswap ---------
+backend:                  amd
+
+--------- convert.ini ---------
+
+[color.color_transfer]
+clip:                     True
+preserve_paper:           True
+
+[color.manual_balance]
+colorspace:               HSV
+balance_1:                0.0
+balance_2:                0.0
+balance_3:                0.0
+contrast:                 0.0
+brightness:               0.0
+
+[color.match_hist]
+threshold:                99.0
+
+[mask.box_blend]
+type:                     gaussian
+distance:                 11.0
+radius:                   5.0
+passes:                   1
+
+[mask.mask_blend]
+type:                     normalized
+kernel_size:              3
+passes:                   4
+threshold:                4
+erosion:                  0.0
+
+[scaling.sharpen]
+method:                   none
+amount:                   150
+radius:                   0.3
+threshold:                5.0
+
+[writer.ffmpeg]
+container:                mp4
+codec:                    libx264
+crf:                      23
+preset:                   medium
+tune:                     none
+profile:                  auto
+level:                    auto
+skip_mux:                 False
+
+[writer.gif]
+fps:                      25
+loop:                     0
+palettesize:              256
+subrectangles:            False
+
+[writer.opencv]
+format:                   png
+draw_transparent:         False
+jpg_quality:              75
+png_compress_level:       3
+
+[writer.pillow]
+format:                   png
+draw_transparent:         False
+optimize:                 False
+gif_interlace:            True
+jpg_quality:              75
+png_compress_level:       3
+tif_compression:          tiff_deflate
+
+--------- extract.ini ---------
+
+[global]
+allow_growth:             False
+
+[align.fan]
+batch-size:               12
+
+[detect.cv2_dnn]
+confidence:               50
+
+[detect.mtcnn]
+minsize:                  20
+threshold_1:              0.6
+threshold_2:              0.7
+threshold_3:              0.7
+scalefactor:              0.709
+batch-size:               8
+
+[detect.s3fd]
+confidence:               70
+batch-size:               4
+
+[mask.unet_dfl]
+batch-size:               8
+
+[mask.vgg_clear]
+batch-size:               6
+
+[mask.vgg_obstructed]
+batch-size:               2
+
+--------- gui.ini ---------
+
+[global]
+fullscreen:               False
+tab:                      extract
+options_panel_width:      30
+console_panel_height:     20
+icon_size:                14
+font:                     default
+font_size:                9
+autosave_last_session:    prompt
+timeout:                  120
+auto_load_model_stats:    True
+
+--------- train.ini ---------
+
+[global]
+centering:                face
+coverage:                 68.75
+icnr_init:                False
+conv_aware_init:          False
+optimizer:                adam
+learning_rate:            5e-05
+reflect_padding:          False
+allow_growth:             False
+mixed_precision:          False
+convert_batchsize:        16
+
+[global.loss]
+loss_function:            ssim
+mask_loss_function:       mse
+l2_reg_term:              100
+eye_multiplier:           3
+mouth_multiplier:         2
+penalized_mask_loss:      False
+mask_type:                extended
+mask_blur_kernel:         3
+mask_threshold:           4
+learn_mask:               False
+
+[model.dfaker]
+output_size:              128
+
+[model.dfl_h128]
+lowmem:                   False
+
+[model.dfl_sae]
+input_size:               128
+clipnorm:                 True
+architecture:             df
+autoencoder_dims:         0
+encoder_dims:             42
+decoder_dims:             21
+multiscale_decoder:       False
+
+[model.dlight]
+features:                 best
+details:                  good
+output_size:              256
+
+[model.original]
+lowmem:                   False
+
+[model.realface]
+input_size:               64
+output_size:              128
+dense_nodes:              1536
+complexity_encoder:       128
+complexity_decoder:       512
+
+[model.unbalanced]
+input_size:               128
+lowmem:                   False
+clipnorm:                 True
+nodes:                    1024
+complexity_encoder:       128
+complexity_decoder_a:     384
+complexity_decoder_b:     512
+
+[model.villain]
+lowmem:                   False
+
+[trainer.original]
+preview_images:           14
+zoom_amount:              5
+rotation_range:           10
+shift_range:              5
+flip_chance:              50
+color_lightness:          30
+color_ab:                 8
+color_clahe_chance:       50
+color_clahe_max_size:     4

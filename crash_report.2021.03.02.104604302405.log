@@ -1,0 +1,513 @@
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Adding defaults: (filename: dlight_defaults.py, module_path: plugins.train.model, plugin_type: model
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Importing defaults module: plugins.train.model.dlight_defaults
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_section                    DEBUG    Add section: (title: 'model.dlight', info: 'A lightweight, high resolution Dfaker variant (Adapted from https://github.com/dfaker/df)')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.dlight', title: 'features', datatype: '<class 'str'>', default: 'best', info: 'Higher settings will allow learning more features such as tatoos, piercing,\nand wrinkles.\nStrongly affects VRAM usage.', rounding: 'None', min_max: None, choices: ['lowmem', 'fair', 'best'], gui_radio: True, fixed: True, group: None)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.dlight', title: 'details', datatype: '<class 'str'>', default: 'good', info: 'Defines detail fidelity. Lower setting can appear 'rugged' while 'good' might take onger time to train.\nAffects VRAM usage.', rounding: 'None', min_max: None, choices: ['fast', 'good'], gui_radio: True, fixed: True, group: None)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.dlight', title: 'output_size', datatype: '<class 'int'>', default: '256', info: 'Output image resolution (in pixels).\nBe aware that larger resolution will increase VRAM requirements.\nNB: Must be either 128, 256, or 384.', rounding: '128', min_max: (128, 384), choices: [], gui_radio: False, fixed: True, group: None)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Added defaults: model.dlight
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Adding defaults: (filename: original_defaults.py, module_path: plugins.train.model, plugin_type: model
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Importing defaults module: plugins.train.model.original_defaults
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_section                    DEBUG    Add section: (title: 'model.original', info: 'Original Faceswap Model.')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.original', title: 'lowmem', datatype: '<class 'bool'>', default: 'False', info: 'Lower memory mode. Set to 'True' if having issues with VRAM useage.\nNB: Models with a changed lowmem mode are not compatible with each other.', rounding: 'None', min_max: None, choices: [], gui_radio: False, fixed: True, group: settings)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Added defaults: model.original
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Adding defaults: (filename: realface_defaults.py, module_path: plugins.train.model, plugin_type: model
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Importing defaults module: plugins.train.model.realface_defaults
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_section                    DEBUG    Add section: (title: 'model.realface', info: 'An extra detailed variant of Original model.\nIncorporates ideas from Bryanlyon and inspiration from the Villain model.\nRequires about 6GB-8GB of VRAM (batchsize 8-16).\n')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.realface', title: 'input_size', datatype: '<class 'int'>', default: '64', info: 'Resolution (in pixels) of the input image to train on.\nBE AWARE Larger resolution will dramatically increase VRAM requirements.\nHigher resolutions may increase prediction accuracy, but does not effect the resulting output size.\nMust be between 64 and 128 and be divisible by 16.', rounding: '16', min_max: (64, 128), choices: [], gui_radio: False, fixed: True, group: size)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.realface', title: 'output_size', datatype: '<class 'int'>', default: '128', info: 'Output image resolution (in pixels).\nBe aware that larger resolution will increase VRAM requirements.\nNB: Must be between 64 and 256 and be divisible by 16.', rounding: '16', min_max: (64, 256), choices: [], gui_radio: False, fixed: True, group: size)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.realface', title: 'dense_nodes', datatype: '<class 'int'>', default: '1536', info: 'Number of nodes for decoder. Might affect your model's ability to learn in general.\nNote that: Lower values will affect the ability to predict details.', rounding: '64', min_max: (768, 2048), choices: [], gui_radio: False, fixed: True, group: network)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.realface', title: 'complexity_encoder', datatype: '<class 'int'>', default: '128', info: 'Encoder Convolution Layer Complexity. sensible ranges: 128 to 150.', rounding: '4', min_max: (96, 160), choices: [], gui_radio: False, fixed: True, group: network)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.realface', title: 'complexity_decoder', datatype: '<class 'int'>', default: '512', info: 'Decoder Complexity.', rounding: '4', min_max: (512, 544), choices: [], gui_radio: False, fixed: True, group: network)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Added defaults: model.realface
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Adding defaults: (filename: unbalanced_defaults.py, module_path: plugins.train.model, plugin_type: model
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Importing defaults module: plugins.train.model.unbalanced_defaults
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_section                    DEBUG    Add section: (title: 'model.unbalanced', info: 'An unbalanced model with adjustable input size options.\nThis is an unbalanced model so b>a swaps may not work well\n')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.unbalanced', title: 'input_size', datatype: '<class 'int'>', default: '128', info: 'Resolution (in pixels) of the image to train on.\nBE AWARE Larger resolution will dramatically increaseVRAM requirements.\nMake sure your resolution is divisible by 64 (e.g. 64, 128, 256 etc.).\nNB: Your faceset must be at least 1.6x larger than your required input size.\n(e.g. 160 is the maximum input size for a 256x256 faceset).', rounding: '64', min_max: (64, 512), choices: [], gui_radio: False, fixed: True, group: size)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.unbalanced', title: 'lowmem', datatype: '<class 'bool'>', default: 'False', info: 'Lower memory mode. Set to 'True' if having issues with VRAM useage.\nNB: Models with a changed lowmem mode are not compatible with each other.\nNB: lowmem will override cutom nodes and complexity settings.', rounding: 'None', min_max: None, choices: [], gui_radio: False, fixed: True, group: settings)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.unbalanced', title: 'clipnorm', datatype: '<class 'bool'>', default: 'True', info: 'Controls gradient clipping of the optimizer. Can prevent model corruption at the expense of VRAM.', rounding: 'None', min_max: None, choices: [], gui_radio: False, fixed: True, group: settings)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.unbalanced', title: 'nodes', datatype: '<class 'int'>', default: '1024', info: 'Number of nodes for decoder. Don't change this unless you know what you are doing!', rounding: '64', min_max: (512, 4096), choices: [], gui_radio: False, fixed: True, group: network)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.unbalanced', title: 'complexity_encoder', datatype: '<class 'int'>', default: '128', info: 'Encoder Convolution Layer Complexity. sensible ranges: 128 to 160.', rounding: '16', min_max: (64, 1024), choices: [], gui_radio: False, fixed: True, group: network)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.unbalanced', title: 'complexity_decoder_a', datatype: '<class 'int'>', default: '384', info: 'Decoder A Complexity.', rounding: '16', min_max: (64, 1024), choices: [], gui_radio: False, fixed: True, group: network)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.unbalanced', title: 'complexity_decoder_b', datatype: '<class 'int'>', default: '512', info: 'Decoder B Complexity.', rounding: '16', min_max: (64, 1024), choices: [], gui_radio: False, fixed: True, group: network)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Added defaults: model.unbalanced
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Adding defaults: (filename: villain_defaults.py, module_path: plugins.train.model, plugin_type: model
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Importing defaults module: plugins.train.model.villain_defaults
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_section                    DEBUG    Add section: (title: 'model.villain', info: 'A Higher resolution version of the Original Model by VillainGuy.\nExtremely VRAM heavy. Don't try to run this if you have a small GPU.\n')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'model.villain', title: 'lowmem', datatype: '<class 'bool'>', default: 'False', info: 'Lower memory mode. Set to 'True' if having issues with VRAM useage.\nNB: Models with a changed lowmem mode are not compatible with each other.', rounding: 'None', min_max: None, choices: [], gui_radio: False, fixed: True, group: settings)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Added defaults: model.villain
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Adding defaults: (filename: original_defaults.py, module_path: plugins.train.trainer, plugin_type: trainer
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Importing defaults module: plugins.train.trainer.original_defaults
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_section                    DEBUG    Add section: (title: 'trainer.original', info: 'Original Trainer Options.\nWARNING: The defaults for augmentation will be fine for 99.9% of use cases. Only change them if you absolutely know what you are doing!')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'preview_images', datatype: '<class 'int'>', default: '14', info: 'Number of sample faces to display for each side in the preview when training.', rounding: '2', min_max: (2, 16), choices: None, gui_radio: False, fixed: True, group: evaluation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'zoom_amount', datatype: '<class 'int'>', default: '5', info: 'Percentage amount to randomly zoom each training image in and out.', rounding: '1', min_max: (0, 25), choices: None, gui_radio: False, fixed: True, group: image augmentation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'rotation_range', datatype: '<class 'int'>', default: '10', info: 'Percentage amount to randomly rotate each training image.', rounding: '1', min_max: (0, 25), choices: None, gui_radio: False, fixed: True, group: image augmentation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'shift_range', datatype: '<class 'int'>', default: '5', info: 'Percentage amount to randomly shift each training image horizontally and vertically.', rounding: '1', min_max: (0, 25), choices: None, gui_radio: False, fixed: True, group: image augmentation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'flip_chance', datatype: '<class 'int'>', default: '50', info: 'Percentage chance to randomly flip each training image horizontally.\nNB: This is ignored if the 'no-flip' option is enabled', rounding: '1', min_max: (0, 75), choices: None, gui_radio: False, fixed: True, group: image augmentation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'color_lightness', datatype: '<class 'int'>', default: '30', info: 'Percentage amount to randomly alter the lightness of each training image.\nNB: This is ignored if the 'no-flip' option is enabled', rounding: '1', min_max: (0, 75), choices: None, gui_radio: False, fixed: True, group: color augmentation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'color_ab', datatype: '<class 'int'>', default: '8', info: 'Percentage amount to randomly alter the 'a' and 'b' colors of the L*a*b* color space of each training image.\nNB: This is ignored if the 'no-flip' option is enabled', rounding: '1', min_max: (0, 50), choices: None, gui_radio: False, fixed: True, group: color augmentation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'color_clahe_chance', datatype: '<class 'int'>', default: '50', info: 'Percentage chance to perform Contrast Limited Adaptive Histogram Equalization on each training image.\nNB: This is ignored if the 'no-augment-color' option is enabled', rounding: '1', min_max: (0, 75), choices: None, gui_radio: False, fixed: False, group: color augmentation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          add_item                       DEBUG    Add item: (section: 'trainer.original', title: 'color_clahe_max_size', datatype: '<class 'int'>', default: '4', info: 'The grid size dictates how much Contrast Limited Adaptive Histogram Equalization is performed on any training image selected for clahe. Contrast will be applied randomly with a gridsize of 0 up to the maximum. This value is a multiplier calculated from the training image size.\nNB: This is ignored if the 'no-augment-color' option is enabled', rounding: '1', min_max: (1, 8), choices: None, gui_radio: False, fixed: True, group: color augmentation)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          _load_defaults_from_module     DEBUG    Added defaults: trainer.original
+03/02/2021 10:46:03 MainProcess     MainThread                     config          handle_config                  DEBUG    Handling config
+03/02/2021 10:46:03 MainProcess     MainThread                     config          check_exists                   DEBUG    Config file exists: 'C:\Users\manns\Desktop\faceswap\config\train.ini'
+03/02/2021 10:46:03 MainProcess     MainThread                     config          load_config                    VERBOSE  Loading config: 'C:\Users\manns\Desktop\faceswap\config\train.ini'
+03/02/2021 10:46:03 MainProcess     MainThread                     config          validate_config                DEBUG    Validating config
+03/02/2021 10:46:03 MainProcess     MainThread                     config          check_config_change            DEBUG    Default config has not changed
+03/02/2021 10:46:03 MainProcess     MainThread                     config          check_config_choices           DEBUG    Checking config choices
+03/02/2021 10:46:03 MainProcess     MainThread                     config          check_config_choices           DEBUG    Checked config choices
+03/02/2021 10:46:03 MainProcess     MainThread                     config          validate_config                DEBUG    Validated config
+03/02/2021 10:46:03 MainProcess     MainThread                     config          handle_config                  DEBUG    Handled config
+03/02/2021 10:46:03 MainProcess     MainThread                     config          __init__                       DEBUG    Initialized: Config
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Getting config item: (section: 'global', option: 'learning_rate')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Returning item: (type: <class 'float'>, value: 5e-05)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Getting config item: (section: 'global', option: 'allow_growth')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Returning item: (type: <class 'bool'>, value: False)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Getting config item: (section: 'global', option: 'convert_batchsize')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 16)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'eye_multiplier')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 3)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Getting config item: (section: 'global.loss', option: 'mouth_multiplier')
+03/02/2021 10:46:03 MainProcess     MainThread                     config          get                            DEBUG    Returning item: (type: <class 'int'>, value: 2)
+03/02/2021 10:46:03 MainProcess     MainThread                     config          changeable_items               DEBUG    Alterable for existing models: {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           __init__                       DEBUG    Initializing State: (model_dir: 'C:\Users\manns\Desktop\FaceSwap1\Proj4\Proj4_Model', model_name: 'original', config_changeable_items: '{'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}', no_logs: False
+03/02/2021 10:46:03 MainProcess     MainThread                     serializer      get_serializer                 DEBUG    <lib.serializer._JSONSerializer object at 0x0000023A5CE18FD0>
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _load                          DEBUG    Loading State
+03/02/2021 10:46:03 MainProcess     MainThread                     serializer      load                           DEBUG    filename: C:\Users\manns\Desktop\FaceSwap1\Proj4\Proj4_Model\original_state.json
+03/02/2021 10:46:03 MainProcess     MainThread                     serializer      load                           DEBUG    stored data type: <class 'bytes'>
+03/02/2021 10:46:03 MainProcess     MainThread                     serializer      unmarshal                      DEBUG    data type: <class 'bytes'>
+03/02/2021 10:46:03 MainProcess     MainThread                     serializer      unmarshal                      DEBUG    returned data type: <class 'dict'>
+03/02/2021 10:46:03 MainProcess     MainThread                     serializer      load                           DEBUG    data type: <class 'dict'>
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _load                          DEBUG    Loaded state: {'name': 'original', 'sessions': {'1': {'timestamp': 1613877005.6656, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 250681, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '2': {'timestamp': 1614005399.2795699, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 32233, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '3': {'timestamp': 1614055300.289129, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 56573, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '4': {'timestamp': 1614175572.4283829, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 30988, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '5': {'timestamp': 1614221876.168482, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 64553, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '6': {'timestamp': 1614263788.2317214, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 29074, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '7': {'timestamp': 1614315010.9033804, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 58108, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '8': {'timestamp': 1614350777.2706566, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 35952, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '9': {'timestamp': 1614399424.442085, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 141750, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}, '10': {'timestamp': 1614521363.7454262, 'no_logs': False, 'loss_names': ['total', 'face_a', 'face_b'], 'batchsize': 16, 'iterations': 39250, 'config': {'learning_rate': 5e-05, 'allow_growth': False, 'convert_batchsize': 16, 'eye_multiplier': 3, 'mouth_multiplier': 2}}}, 'lowest_avg_loss': {'a': 0.014933548867702484, 'b': 0.022672485560178757}, 'iterations': 739162, 'config': {'centering': 'face', 'coverage': 68.75, 'optimizer': 'adam', 'learning_rate': 5e-05, 'allow_growth': False, 'mixed_precision': False, 'convert_batchsize': 16, 'loss_function': 'ssim', 'mask_loss_function': 'mse', 'l2_reg_term': 100, 'eye_multiplier': 3, 'mouth_multiplier': 2, 'penalized_mask_loss': True, 'mask_type': 'extended', 'mask_blur_kernel': 3, 'mask_threshold': 4, 'learn_mask': False, 'lowmem': False}}
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _update_legacy_config          DEBUG    Checking for legacy state file update
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _update_legacy_config          DEBUG    Legacy item 'dssim_loss' not in config. Skipping update
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _update_legacy_config          DEBUG    State file updated for legacy config: False
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _replace_config                DEBUG    Replacing config. Old config: {'centering': 'face', 'coverage': 68.75, 'optimizer': 'adam', 'learning_rate': 5e-05, 'allow_growth': False, 'mixed_precision': False, 'convert_batchsize': 16, 'loss_function': 'ssim', 'mask_loss_function': 'mse', 'l2_reg_term': 100, 'eye_multiplier': 3, 'mouth_multiplier': 2, 'penalized_mask_loss': False, 'mask_type': 'extended', 'mask_blur_kernel': 3, 'mask_threshold': 4, 'learn_mask': False, 'lowmem': False}
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _replace_config                DEBUG    Replaced config. New config: {'centering': 'face', 'coverage': 68.75, 'optimizer': 'adam', 'learning_rate': 5e-05, 'allow_growth': False, 'mixed_precision': False, 'convert_batchsize': 16, 'loss_function': 'ssim', 'mask_loss_function': 'mse', 'l2_reg_term': 100, 'eye_multiplier': 3, 'mouth_multiplier': 2, 'penalized_mask_loss': True, 'mask_type': 'extended', 'mask_blur_kernel': 3, 'mask_threshold': 4, 'learn_mask': False, 'lowmem': False}
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _replace_config                INFO     Using configuration saved in state file
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _new_session_id                DEBUG    11
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _create_new_session            DEBUG    Creating new session. id: 11
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           __init__                       DEBUG    Initialized State:
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           __init__                       DEBUG    Initializing _Settings: (arguments: Namespace(alignments_path='C:\\Users\\manns\\Desktop\\FaceSwap1\\Proj4\\Proj4_alignments.fsa', colab=False, color_adjustment='none', configfile=None, exclude_gpus=None, filter=None, frame_ranges=None, func=<bound method ScriptExecutor.execute_script of <lib.cli.launcher.ScriptExecutor object at 0x0000023A5146C9D0>>, input_aligned_dir=None, input_dir='C:\\Users\\manns\\Desktop\\FaceSwap1\\NonEdit\\Proj4.mp4', jobs=0, keep_unchanged=False, logfile=None, loglevel='INFO', mask_type='none', model_dir='C:\\Users\\manns\\Desktop\\FaceSwap1\\Proj4\\Proj4_Model', nfilter=None, on_the_fly=False, output_dir='C:\\Users\\manns\\Desktop\\FaceSwap1\\Proj4\\Proj4_Results', output_scale=100, redirect_gui=True, ref_threshold=0.4, reference_video=None, singleprocess=False, swap_model=False, trainer=None, writer='ffmpeg'), mixed_precision: False, allow_growth: False, is_predict: True)
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _set_keras_mixed_precision     DEBUG    use_mixed_precision: False, exclude_gpus: False
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _set_keras_mixed_precision     DEBUG    Not enabling 'mixed_precision' (backend: amd, use_mixed_precision: False)
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _get_strategy                  DEBUG    Using strategy: None
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           __init__                       DEBUG    Initialized _Settings
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           __init__                       DEBUG    Initializing _Loss
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           __init__                       DEBUG    Initialized: _Loss
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           __init__                       DEBUG    Initialized ModelBase (Model)
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           strategy_scope                 DEBUG    Using strategy scope: <contextlib.nullcontext object at 0x0000023A5CE2D700>
+03/02/2021 10:46:03 MainProcess     MainThread                     _base           _load                          DEBUG    Loading model: C:\Users\manns\Desktop\FaceSwap1\Proj4\Proj4_Model\original.h5
+03/02/2021 10:46:03 MainProcess     MainThread                     library         _logger_callback               INFO     Opening device "opencl_amd_ellesmere.0"
+Traceback (most recent call last):
+  File "C:\Users\manns\Desktop\faceswap\lib\cli\launcher.py", line 181, in execute_script
+    process = script(arguments)
+  File "C:\Users\manns\Desktop\faceswap\scripts\convert.py", line 65, in __init__
+    self._predictor = Predict(self._disk_io.load_queue, self._queue_size, arguments)
+  File "C:\Users\manns\Desktop\faceswap\scripts\convert.py", line 661, in __init__
+    self._model = self._load_model()
+  File "C:\Users\manns\Desktop\faceswap\scripts\convert.py", line 746, in _load_model
+    model.build()
+  File "C:\Users\manns\Desktop\faceswap\plugins\train\model\_base.py", line 258, in build
+    model = self._io._load()  # pylint:disable=protected-access
+  File "C:\Users\manns\Desktop\faceswap\plugins\train\model\_base.py", line 520, in _load
+    model = load_model(self._filename, compile=False)
+  File "C:\Users\manns\MiniConda3\envs\faceswap\lib\site-packages\keras\engine\saving.py", line 419, in load_model
+    model = _deserialize_model(f, custom_objects, compile)
+  File "C:\Users\manns\MiniConda3\envs\faceswap\lib\site-packages\keras\engine\saving.py", line 249, in _deserialize_model
+    layer_weights = model_weights_group[name]
+  File "C:\Users\manns\MiniConda3\envs\faceswap\lib\site-packages\keras\utils\io_utils.py", line 303, in __getitem__
+    val = H5Dict(self.data.create_group(attr))
+  File "C:\Users\manns\MiniConda3\envs\faceswap\lib\site-packages\h5py\_hl\group.py", line 68, in create_group
+    gid = h5g.create(self.id, name, lcpl=lcpl, gcpl=gcpl)
+  File "h5py\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\h5g.pyx", line 161, in h5py.h5g.create
+ValueError: Unable to create group (no write intent on file)
+
+============ System Information ============
+encoding:            cp1252
+git_branch:          master
+git_commits:         514f3d6 lib.gui - Restore settings window on click when hidden
+gpu_cuda:            No global version found. Check Conda packages for Conda Cuda
+gpu_cudnn:           No global version found. Check Conda packages for Conda cuDNN
+gpu_devices:         GPU_0: Advanced Micro Devices, Inc. - Ellesmere (experimental), GPU_1: Advanced Micro Devices, Inc. - Ellesmere (supported)
+gpu_devices_active:  GPU_0, GPU_1
+gpu_driver:          ['3188.4', '3188.4']
+gpu_vram:            GPU_0: 8192MB, GPU_1: 8192MB
+os_machine:          AMD64
+os_platform:         Windows-10-10.0.18362-SP0
+os_release:          10
+py_command:          C:\Users\manns\Desktop\faceswap\faceswap.py convert -i C:/Users/manns/Desktop/FaceSwap1/NonEdit/Proj4.mp4 -o C:/Users/manns/Desktop/FaceSwap1/Proj4/Proj4_Results -al C:/Users/manns/Desktop/FaceSwap1/Proj4/Proj4_alignments.fsa -m C:/Users/manns/Desktop/FaceSwap1/Proj4/Proj4_Model -c none -M none -w ffmpeg -osc 100 -l 0.4 -j 0 -L INFO -gui
+py_conda_version:    conda 4.9.2
+py_implementation:   CPython
+py_version:          3.8.8
+py_virtual_env:      True
+sys_cores:           16
+sys_processor:       AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+sys_ram:             Total: 16328MB, Available: 8774MB, Used: 7553MB, Free: 8774MB
+
+=============== Pip Packages ===============
+absl-py==0.11.0
+astunparse==1.6.3
+cachetools==4.2.1
+certifi==2020.12.5
+cffi==1.14.5
+chardet==4.0.0
+cycler==0.10.0
+enum34==1.1.10
+fastcluster==1.1.26
+ffmpy==0.2.3
+gast==0.3.3
+google-auth==1.27.0
+google-auth-oauthlib==0.4.2
+google-pasta==0.2.0
+grpcio==1.36.0
+h5py==2.10.0
+idna==2.10
+imageio @ file:///tmp/build/80754af9/imageio_1594161405741/work
+imageio-ffmpeg @ file:///home/conda/feedstock_root/build_artifacts/imageio-ffmpeg_1609799311556/work
+joblib @ file:///tmp/build/80754af9/joblib_1613502643832/work
+Keras==2.2.4
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+kiwisolver @ file:///C:/ci/kiwisolver_1612282606037/work
+Markdown==3.3.4
+matplotlib @ file:///C:/ci/matplotlib-base_1592837548929/work
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+numpy==1.18.5
+nvidia-ml-py3 @ git+https://github.com/deepfakes/nvidia-ml-py3.git@6fc29ac84b32bad877f078cb4a777c1548a00bf6
+oauthlib==3.1.0
+olefile==0.46
+opencv-python==4.5.1.48
+opt-einsum==3.3.0
+pathlib==1.0.1
+Pillow @ file:///C:/ci/pillow_1609786840597/work
+plaidml==0.7.0
+plaidml-keras==0.7.0
+protobuf==3.15.3
+psutil @ file:///C:/ci/psutil_1612298324802/work
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser==2.20
+pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
+python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
+pywin32==227
+PyYAML==5.4.1
+requests==2.25.1
+requests-oauthlib==1.3.0
+rsa==4.7.2
+scikit-learn @ file:///C:/ci/scikit-learn_1614446896245/work
+scipy @ file:///C:/ci/scipy_1614023125644/work
+sip==4.19.13
+six @ file:///C:/ci/six_1605187374963/work
+tensorboard==2.2.2
+tensorboard-plugin-wit==1.8.0
+tensorflow==2.2.2
+tensorflow-estimator==2.2.0
+termcolor==1.1.0
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+tornado @ file:///C:/ci/tornado_1606942392901/work
+tqdm @ file:///tmp/build/80754af9/tqdm_1611857934208/work
+urllib3==1.26.3
+Werkzeug==1.0.1
+wincertstore==0.2
+wrapt==1.12.1
+
+============== Conda Packages ==============
+# packages in environment at C:\Users\manns\MiniConda3\envs\faceswap:
+#
+# Name                    Version                   Build  Channel
+absl-py                   0.11.0                   pypi_0    pypi
+astunparse                1.6.3                    pypi_0    pypi
+blas                      1.0                         mkl  
+ca-certificates           2021.1.19            haa95532_0  
+cachetools                4.2.1                    pypi_0    pypi
+certifi                   2020.12.5        py38haa95532_0  
+cffi                      1.14.5                   pypi_0    pypi
+chardet                   4.0.0                    pypi_0    pypi
+cycler                    0.10.0                   py38_0  
+enum34                    1.1.10                   pypi_0    pypi
+fastcluster               1.1.26           py38h251f6bf_2    conda-forge
+ffmpeg                    4.3.1                ha925a31_0    conda-forge
+ffmpy                     0.2.3                    pypi_0    pypi
+freetype                  2.10.4               hd328e21_0  
+gast                      0.3.3                    pypi_0    pypi
+git                       2.23.0               h6bb4b03_0  
+google-auth               1.27.0                   pypi_0    pypi
+google-auth-oauthlib      0.4.2                    pypi_0    pypi
+google-pasta              0.2.0                    pypi_0    pypi
+grpcio                    1.36.0                   pypi_0    pypi
+h5py                      2.10.0                   pypi_0    pypi
+icc_rt                    2019.0.0             h0cc432a_1  
+icu                       58.2                 ha925a31_3  
+idna                      2.10                     pypi_0    pypi
+imageio                   2.9.0                      py_0  
+imageio-ffmpeg            0.4.3              pyhd8ed1ab_0    conda-forge
+intel-openmp              2020.2                      254  
+joblib                    1.0.1              pyhd3eb1b0_0  
+jpeg                      9b                   hb83a4c4_2  
+keras                     2.2.4                    pypi_0    pypi
+keras-applications        1.0.8                    pypi_0    pypi
+keras-preprocessing       1.1.2                    pypi_0    pypi
+kiwisolver                1.3.1            py38hd77b12b_0  
+libpng                    1.6.37               h2a8f88b_0  
+libtiff                   4.1.0                h56a325e_1  
+lz4-c                     1.9.3                h2bbff1b_0  
+markdown                  3.3.4                    pypi_0    pypi
+matplotlib                3.2.2                         0  
+matplotlib-base           3.2.2            py38h64f37c6_0  
+mkl                       2020.2                      256  
+mkl-service               2.3.0            py38h196d8e1_0  
+mkl_fft                   1.3.0            py38h46781fe_0  
+mkl_random                1.1.1            py38h47e9c7a_0  
+numpy                     1.18.5                   pypi_0    pypi
+nvidia-ml-py3             7.352.1                  pypi_0    pypi
+oauthlib                  3.1.0                    pypi_0    pypi
+olefile                   0.46                       py_0  
+opencv-python             4.5.1.48                 pypi_0    pypi
+openssl                   1.1.1j               h2bbff1b_0  
+opt-einsum                3.3.0                    pypi_0    pypi
+pathlib                   1.0.1                      py_1  
+pillow                    8.1.0            py38h4fa10fc_0  
+pip                       21.0.1           py38haa95532_0  
+plaidml                   0.7.0                    pypi_0    pypi
+plaidml-keras             0.7.0                    pypi_0    pypi
+protobuf                  3.15.3                   pypi_0    pypi
+psutil                    5.8.0            py38h2bbff1b_1  
+pyasn1                    0.4.8                    pypi_0    pypi
+pyasn1-modules            0.2.8                    pypi_0    pypi
+pycparser                 2.20                     pypi_0    pypi
+pyparsing                 2.4.7              pyhd3eb1b0_0  
+pyqt                      5.9.2            py38ha925a31_4  
+python                    3.8.8                hdbf39b2_4  
+python-dateutil           2.8.1              pyhd3eb1b0_0  
+python_abi                3.8                      1_cp38    conda-forge
+pywin32                   227              py38he774522_1  
+pyyaml                    5.4.1                    pypi_0    pypi
+qt                        5.9.7            vc14h73c81de_0  
+requests                  2.25.1                   pypi_0    pypi
+requests-oauthlib         1.3.0                    pypi_0    pypi
+rsa                       4.7.2                    pypi_0    pypi
+scikit-learn              0.24.1           py38hf11a4ad_0  
+scipy                     1.6.1            py38h14eb087_0  
+setuptools                52.0.0           py38haa95532_0  
+sip                       4.19.13          py38ha925a31_0  
+six                       1.15.0           py38haa95532_0  
+sqlite                    3.33.0               h2a8f88b_0  
+tensorboard               2.2.2                    pypi_0    pypi
+tensorboard-plugin-wit    1.8.0                    pypi_0    pypi
+tensorflow                2.2.2                    pypi_0    pypi
+tensorflow-estimator      2.2.0                    pypi_0    pypi
+termcolor                 1.1.0                    pypi_0    pypi
+threadpoolctl             2.1.0              pyh5ca1d4c_0  
+tk                        8.6.10               he774522_0  
+tornado                   6.1              py38h2bbff1b_0  
+tqdm                      4.56.0             pyhd3eb1b0_0  
+urllib3                   1.26.3                   pypi_0    pypi
+vc                        14.2                 h21ff451_1  
+vs2015_runtime            14.27.29016          h5e58377_2  
+werkzeug                  1.0.1                    pypi_0    pypi
+wheel                     0.36.2             pyhd3eb1b0_0  
+wincertstore              0.2                      py38_0  
+wrapt                     1.12.1                   pypi_0    pypi
+xz                        5.2.5                h62dcd97_0  
+zlib                      1.2.11               h62dcd97_4  
+zstd                      1.4.5                h04227a9_0  
+
+================= Configs ==================
+--------- .faceswap ---------
+backend:                  amd
+
+--------- convert.ini ---------
+
+[color.color_transfer]
+clip:                     True
+preserve_paper:           True
+
+[color.manual_balance]
+colorspace:               HSV
+balance_1:                0.0
+balance_2:                0.0
+balance_3:                0.0
+contrast:                 0.0
+brightness:               0.0
+
+[color.match_hist]
+threshold:                99.0
+
+[mask.box_blend]
+type:                     gaussian
+distance:                 11.0
+radius:                   5.0
+passes:                   1
+
+[mask.mask_blend]
+type:                     normalized
+kernel_size:              3
+passes:                   4
+threshold:                4
+erosion:                  0.0
+
+[scaling.sharpen]
+method:                   none
+amount:                   150
+radius:                   0.3
+threshold:                5.0
+
+[writer.ffmpeg]
+container:                mp4
+codec:                    libx264
+crf:                      23
+preset:                   medium
+tune:                     none
+profile:                  auto
+level:                    auto
+skip_mux:                 False
+
+[writer.gif]
+fps:                      25
+loop:                     0
+palettesize:              256
+subrectangles:            False
+
+[writer.opencv]
+format:                   png
+draw_transparent:         False
+jpg_quality:              75
+png_compress_level:       3
+
+[writer.pillow]
+format:                   png
+draw_transparent:         False
+optimize:                 False
+gif_interlace:            True
+jpg_quality:              75
+png_compress_level:       3
+tif_compression:          tiff_deflate
+
+--------- extract.ini ---------
+
+[global]
+allow_growth:             False
+
+[align.fan]
+batch-size:               12
+
+[detect.cv2_dnn]
+confidence:               50
+
+[detect.mtcnn]
+minsize:                  20
+threshold_1:              0.6
+threshold_2:              0.7
+threshold_3:              0.7
+scalefactor:              0.709
+batch-size:               8
+
+[detect.s3fd]
+confidence:               70
+batch-size:               4
+
+[mask.unet_dfl]
+batch-size:               8
+
+[mask.vgg_clear]
+batch-size:               6
+
+[mask.vgg_obstructed]
+batch-size:               2
+
+--------- gui.ini ---------
+
+[global]
+fullscreen:               False
+tab:                      extract
+options_panel_width:      30
+console_panel_height:     20
+icon_size:                14
+font:                     default
+font_size:                9
+autosave_last_session:    prompt
+timeout:                  120
+auto_load_model_stats:    True
+
+--------- train.ini ---------
+
+[global]
+centering:                face
+coverage:                 68.75
+icnr_init:                False
+conv_aware_init:          False
+optimizer:                adam
+learning_rate:            5e-05
+reflect_padding:          False
+allow_growth:             False
+mixed_precision:          False
+convert_batchsize:        16
+
+[global.loss]
+loss_function:            ssim
+mask_loss_function:       mse
+l2_reg_term:              100
+eye_multiplier:           3
+mouth_multiplier:         2
+penalized_mask_loss:      False
+mask_type:                extended
+mask_blur_kernel:         3
+mask_threshold:           4
+learn_mask:               False
+
+[model.dfaker]
+output_size:              128
+
+[model.dfl_h128]
+lowmem:                   False
+
+[model.dfl_sae]
+input_size:               128
+clipnorm:                 True
+architecture:             df
+autoencoder_dims:         0
+encoder_dims:             42
+decoder_dims:             21
+multiscale_decoder:       False
+
+[model.dlight]
+features:                 best
+details:                  good
+output_size:              256
+
+[model.original]
+lowmem:                   False
+
+[model.realface]
+input_size:               64
+output_size:              128
+dense_nodes:              1536
+complexity_encoder:       128
+complexity_decoder:       512
+
+[model.unbalanced]
+input_size:               128
+lowmem:                   False
+clipnorm:                 True
+nodes:                    1024
+complexity_encoder:       128
+complexity_decoder_a:     384
+complexity_decoder_b:     512
+
+[model.villain]
+lowmem:                   False
+
+[trainer.original]
+preview_images:           14
+zoom_amount:              5
+rotation_range:           10
+shift_range:              5
+flip_chance:              50
+color_lightness:          30
+color_ab:                 8
+color_clahe_chance:       50
+color_clahe_max_size:     4
